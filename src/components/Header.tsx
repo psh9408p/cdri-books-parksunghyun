@@ -2,15 +2,15 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
-        <header className="h-20 w-full border-b border-gray">
-            <div className="mx-auto flex h-full max-w-[1920px] items-center justify-between px-6">
+        <header className="h-[80px] w-full border-b border-gray">
+            <div className="relative mx-auto flex h-full max-w-[1920px] items-center px-6 pl-[160px]">
                 {/* 로고 */}
-                <h1 className="font-bold text-[24px] text-primary mt-6 mb-6">
+                <h1 className="font-bold text-[24px] text-primary">
                     CERTICOS BOOKS
                 </h1>
 
-                {/* 메뉴 */}
-                <nav className="flex gap-2">
+                {/* 메뉴 - 중앙 배치 */}
+                <nav className="absolute left-1/2 flex  -translate-x-1/2 gap-[56px] pl-[400px]">
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
